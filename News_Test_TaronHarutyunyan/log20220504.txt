@@ -1,0 +1,929 @@
+2022-05-04 10:43:36.191 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:43:36.211 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:43:36.235 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:43:36.237 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:43:36.463 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:43:36.471 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 264.3249ms
+2022-05-04 10:43:36.495 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 32.6432ms
+2022-05-04 10:43:36.735 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:43:36.854 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.9963ms
+2022-05-04 10:43:51.958 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/Category application/json 16
+2022-05-04 10:43:52.001 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 10:43:52.032 +04:00 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCategory(News_Test_TaronHarutyunyan.ModelsDto.CategoryDto) on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 10:43:52.719 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:43:53.202 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name], [NewsId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 10:43:53.250 +04:00 [INF] Category Created
+2022-05-04 10:43:53.255 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 10:43:53.264 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan) in 1224.2603ms
+2022-05-04 10:43:53.267 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 10:43:53.276 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/Category application/json 16 - 200 - - 1318.4791ms
+2022-05-04 10:46:19.416 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:46:19.434 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:46:19.453 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:46:19.454 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:46:19.681 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:46:19.685 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 250.6263ms
+2022-05-04 10:46:19.716 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 30.2871ms
+2022-05-04 10:46:19.929 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:46:20.045 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.0972ms
+2022-05-04 10:46:57.296 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 97
+2022-05-04 10:46:57.333 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:46:57.358 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:46:58.064 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:46:58.710 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 10:46:58.927 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 10:46:58.967 +04:00 [INF] News Created
+2022-05-04 10:46:58.976 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 10:46:58.982 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 1617.6223ms
+2022-05-04 10:46:58.987 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:46:58.995 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 97 - 200 - - 1698.7837ms
+2022-05-04 10:47:06.401 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:47:06.407 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:47:06.411 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:47:06.437 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:47:06.449 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 10:47:06.461 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:47:06.476 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 62.8709ms
+2022-05-04 10:47:06.478 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:47:06.481 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 79.1474ms
+2022-05-04 10:48:22.747 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:48:22.767 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:48:22.799 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:48:22.800 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:48:23.044 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:48:23.047 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 281.2214ms
+2022-05-04 10:48:23.063 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.8432ms
+2022-05-04 10:48:23.257 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:48:23.382 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.8496ms
+2022-05-04 10:48:34.885 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:48:34.920 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:48:34.940 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:48:35.582 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:48:36.259 +04:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 10:48:36.333 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:48:36.350 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 1403.607ms
+2022-05-04 10:48:36.352 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:48:36.356 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 1471.0373ms
+2022-05-04 10:49:28.809 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:49:28.829 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:49:28.848 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:49:28.849 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:49:29.067 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 240.7270ms
+2022-05-04 10:49:29.070 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:49:29.093 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 22.1324ms
+2022-05-04 10:49:29.281 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:49:29.364 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.7875ms
+2022-05-04 10:49:39.524 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:49:39.558 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:49:39.575 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:49:43.483 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:50:25.165 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:50:25.185 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:50:25.202 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:50:25.204 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:50:25.461 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:50:25.464 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 280.8243ms
+2022-05-04 10:50:25.478 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 16.0534ms
+2022-05-04 10:50:25.675 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:50:25.802 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.8177ms
+2022-05-04 10:50:34.162 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:50:34.199 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:50:34.218 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:50:37.452 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:50:38.111 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 10:51:30.063 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:44397/api/News?id=1 - -
+2022-05-04 10:51:30.066 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:51:30.073 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:51:30.078 +04:00 [INF] Route matched with {action = "DeleteNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteNews(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:51:30.092 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 55867.2498ms
+2022-05-04 10:51:30.094 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:51:30.099 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 55937.6291ms
+2022-05-04 10:51:30.120 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:51:30.160 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+WHERE [n].[Id] = @__id_0
+2022-05-04 10:51:30.231 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [News]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-05-04 10:51:30.243 +04:00 [INF] News by 1 Id Deleted
+2022-05-04 10:51:30.249 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 10:51:30.251 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan) in 170.8614ms
+2022-05-04 10:51:30.253 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:51:30.256 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:44397/api/News?id=1 - - - 200 - - 193.5516ms
+2022-05-04 10:51:37.961 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:51:37.974 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:51:37.977 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:51:40.364 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:51:40.380 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 10:51:44.814 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:51:44.817 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 6835.475ms
+2022-05-04 10:51:44.820 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:51:46.496 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 8535.0507ms
+2022-05-04 10:52:07.020 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/Category - -
+2022-05-04 10:52:07.026 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 10:52:07.033 +04:00 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 10:52:07.036 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:52:07.046 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+2022-05-04 10:52:07.060 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.Category, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:52:07.062 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan) in 27.895ms
+2022-05-04 10:52:07.066 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 10:52:07.068 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/Category - - - 200 - application/json;+charset=utf-8 47.5431ms
+2022-05-04 10:52:39.196 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 81
+2022-05-04 10:52:39.200 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:52:39.209 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:52:39.229 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:52:39.236 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 10:53:51.300 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:53:51.321 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:53:51.344 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:53:51.347 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:53:51.601 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:53:51.604 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 283.7798ms
+2022-05-04 10:53:51.620 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.4365ms
+2022-05-04 10:53:51.849 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:53:51.981 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.8387ms
+2022-05-04 10:54:16.452 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 66
+2022-05-04 10:54:16.490 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:54:16.513 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:54:17.147 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:54:17.702 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 10:54:17.766 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 10:54:17.897 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 10:54:17.918 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [NewsId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-05-04 10:54:17.921 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [NewsId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-05-04 10:54:17.932 +04:00 [INF] News Created
+2022-05-04 10:54:17.937 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 10:54:17.943 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 1422.8568ms
+2022-05-04 10:54:17.945 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:54:17.952 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 66 - 200 - - 1500.0289ms
+2022-05-04 10:54:27.823 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 10:54:27.847 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:54:27.853 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:54:30.463 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:54:30.546 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 10:54:30.557 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:54:30.570 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 2714.7657ms
+2022-05-04 10:54:30.571 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 10:54:30.573 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 2749.7758ms
+2022-05-04 10:59:32.060 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 10:59:32.113 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 10:59:32.151 +04:00 [INF] Hosting environment: Development
+2022-05-04 10:59:32.158 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 10:59:32.430 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 10:59:32.433 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 331.8407ms
+2022-05-04 10:59:32.503 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 17.9984ms
+2022-05-04 10:59:32.707 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 10:59:32.823 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.3139ms
+2022-05-04 10:59:43.262 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 10:59:43.296 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 10:59:43.318 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 10:59:43.948 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 10:59:44.481 +04:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 10:59:44.561 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 10:59:44.577 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan) in 1252.7168ms
+2022-05-04 10:59:44.579 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 10:59:44.586 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/2 - - - 200 - application/json;+charset=utf-8 1324.3018ms
+2022-05-04 11:01:51.635 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:01:51.652 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:01:51.676 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:01:51.679 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:01:51.921 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:01:51.925 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 272.7170ms
+2022-05-04 11:01:51.940 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.6086ms
+2022-05-04 11:01:52.131 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:01:52.225 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.1042ms
+2022-05-04 11:01:58.539 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 11:01:58.585 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:01:58.604 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:01:59.308 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:01:59.905 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:01:59.995 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:02:00.017 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 1402.7284ms
+2022-05-04 11:02:00.019 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:02:00.026 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 1487.2908ms
+2022-05-04 11:02:12.611 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:02:12.615 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:02:12.631 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:02:12.665 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:02:12.672 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 11:02:12.700 +04:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:02:12.752 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'News_Test_TaronHarutyunyan.NewsDbContext'.
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlCommand.ValidateCommand(Boolean isAsync, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlCommand.ValidateCommand(Boolean isAsync, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-04 11:05:02.591 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:05:02.608 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:05:02.625 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:05:02.627 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:05:02.975 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:05:02.979 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 363.9559ms
+2022-05-04 11:05:03.011 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 25.1865ms
+2022-05-04 11:05:03.226 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:05:03.346 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.9371ms
+2022-05-04 11:05:15.026 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:05:15.058 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:05:15.089 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:05:15.777 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:05:16.278 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 11:05:16.353 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:05:16.367 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan) in 1271.5535ms
+2022-05-04 11:05:16.369 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:05:16.375 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/2 - - - 200 - application/json;+charset=utf-8 1349.5026ms
+2022-05-04 11:05:31.936 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:05:31.942 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:05:31.945 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:05:35.250 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:05:36.111 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 11:06:06.114 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:06:06.141 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:06:06.165 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:06:06.167 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:06:06.406 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:06:06.408 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 269.5814ms
+2022-05-04 11:06:06.424 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.5122ms
+2022-05-04 11:06:06.617 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:06:06.717 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.5760ms
+2022-05-04 11:06:19.916 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:06:19.959 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:06:19.983 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:06:26.276 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:06:27.072 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:06:35.834 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:06:35.854 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan) in 15864.1734ms
+2022-05-04 11:06:35.857 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:06:35.862 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/2 - - - 200 - application/json;+charset=utf-8 15946.1979ms
+2022-05-04 11:07:07.758 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 78
+2022-05-04 11:07:07.767 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:07.782 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:07:07.827 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:07:07.872 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:07:08.006 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:07:08.026 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p4='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [NewsId] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+2022-05-04 11:07:08.041 +04:00 [INF] News Created
+2022-05-04 11:07:08.047 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:07:08.050 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 265.5396ms
+2022-05-04 11:07:08.053 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:08.056 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 78 - 200 - - 297.8510ms
+2022-05-04 11:07:11.240 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:07:11.244 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:11.250 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:07:13.392 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:07:13.398 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:07:13.400 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:07:13.402 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan) in 2149.0811ms
+2022-05-04 11:07:13.406 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:13.408 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/2 - - - 200 - application/json;+charset=utf-8 2168.5126ms
+2022-05-04 11:07:48.437 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/2 - -
+2022-05-04 11:07:48.442 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:48.443 +04:00 [INF] Route matched with {action = "GetNewsByCategoryId", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByCategoryId(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:07:52.328 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:07:52.337 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:07:52.338 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:07:52.340 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan) in 3895.3155ms
+2022-05-04 11:07:52.341 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByCategoryId (News_Test_TaronHarutyunyan)'
+2022-05-04 11:07:52.344 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/2 - - - 200 - application/json;+charset=utf-8 3906.5985ms
+2022-05-04 11:08:14.116 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 11:08:14.121 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:08:14.152 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:08:14.155 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:08:14.158 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:08:14.160 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:08:14.162 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 8.2102ms
+2022-05-04 11:08:14.166 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:08:14.170 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 53.3577ms
+2022-05-04 11:12:43.366 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:12:43.388 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:12:43.408 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:12:43.409 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:12:43.635 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:12:43.640 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 255.3500ms
+2022-05-04 11:12:43.664 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 28.2824ms
+2022-05-04 11:12:43.863 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:12:43.963 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.2458ms
+2022-05-04 11:13:54.958 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:13:54.996 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:13:55.023 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:13:55.028 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:13:55.301 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:13:55.304 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 311.8013ms
+2022-05-04 11:13:55.321 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 19.3322ms
+2022-05-04 11:13:55.514 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:13:55.620 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.9107ms
+2022-05-04 11:14:03.911 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/st - -
+2022-05-04 11:14:03.976 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/st - - - 200 - - 65.5307ms
+2022-05-04 11:15:30.718 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:15:30.743 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:15:30.762 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:15:30.765 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:15:31.008 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:15:31.011 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 269.2269ms
+2022-05-04 11:15:31.026 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.0376ms
+2022-05-04 11:15:31.232 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:15:31.327 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.4082ms
+2022-05-04 11:15:41.028 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/st/search - -
+2022-05-04 11:15:41.070 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByText (News_Test_TaronHarutyunyan)'
+2022-05-04 11:15:41.104 +04:00 [INF] Route matched with {action = "GetNewsByText", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByText(System.String) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:15:41.863 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:15:42.439 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 11:15:42.516 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:15:42.535 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByText (News_Test_TaronHarutyunyan) in 1423.9535ms
+2022-05-04 11:15:42.537 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByText (News_Test_TaronHarutyunyan)'
+2022-05-04 11:15:42.543 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/st/search - - - 200 - application/json;+charset=utf-8 1515.3659ms
+2022-05-04 11:18:19.076 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:18:19.094 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:18:19.114 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:18:19.115 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:18:19.361 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:18:19.363 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 270.1563ms
+2022-05-04 11:18:19.382 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 20.7336ms
+2022-05-04 11:18:19.589 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:18:19.691 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.2977ms
+2022-05-04 11:19:06.338 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/3%2F5%2F2022/5%2F5%2F2022 - -
+2022-05-04 11:19:06.376 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan)'
+2022-05-04 11:19:06.401 +04:00 [INF] Route matched with {action = "GetNewsByDate", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByDate(System.DateTime, System.DateTime) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:19:06.529 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-05-04 11:19:06.548 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan) in 139.7909ms
+2022-05-04 11:19:06.550 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan)'
+2022-05-04 11:19:06.552 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/3%2F5%2F2022/5%2F5%2F2022 - - - 400 - application/problem+json;+charset=utf-8 214.5539ms
+2022-05-04 11:19:24.191 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News/3.5.2022/5.5.2022 - -
+2022-05-04 11:19:24.196 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan)'
+2022-05-04 11:19:24.200 +04:00 [INF] Route matched with {action = "GetNewsByDate", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNewsByDate(System.DateTime, System.DateTime) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:19:24.711 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:19:25.201 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+2022-05-04 11:19:25.285 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:19:25.293 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan) in 1091.9206ms
+2022-05-04 11:19:25.296 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetNewsByDate (News_Test_TaronHarutyunyan)'
+2022-05-04 11:19:25.301 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News/3.5.2022/5.5.2022 - - - 200 - application/json;+charset=utf-8 1110.0080ms
+2022-05-04 11:21:01.251 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:21:01.283 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:21:01.308 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:21:01.310 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:21:01.652 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:21:01.656 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 373.6699ms
+2022-05-04 11:21:01.673 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 21.1562ms
+2022-05-04 11:21:01.917 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:21:02.014 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.2850ms
+2022-05-04 11:21:13.054 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/Category - -
+2022-05-04 11:21:13.087 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:13.112 +04:00 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:21:13.776 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:21:14.300 +04:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+2022-05-04 11:21:14.368 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.Category, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:21:14.382 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan) in 1264.3162ms
+2022-05-04 11:21:14.384 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:14.392 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/Category - - - 200 - application/json;+charset=utf-8 1338.2788ms
+2022-05-04 11:21:29.206 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 58
+2022-05-04 11:21:29.209 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:29.224 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:21:29.274 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:21:29.367 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:21:29.374 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name], [c].[NewsId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:21:29.504 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:21:29.525 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [NewsId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-05-04 11:21:29.527 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [NewsId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-05-04 11:21:29.539 +04:00 [INF] News Created
+2022-05-04 11:21:29.543 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:21:29.545 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 319.2495ms
+2022-05-04 11:21:29.546 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:29.549 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 58 - 200 - - 343.0669ms
+2022-05-04 11:21:40.241 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 11:21:40.243 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:40.245 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:21:40.259 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:21:40.335 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [c].[Id], [c].[Name], [c].[NewsId]
+FROM [News] AS [n]
+LEFT JOIN [Categories] AS [c] ON [n].[Id] = [c].[NewsId]
+ORDER BY [n].[Id], [c].[Id]
+2022-05-04 11:21:40.344 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:21:40.349 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 102.2456ms
+2022-05-04 11:21:40.351 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:21:40.352 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 110.8468ms
+2022-05-04 11:23:53.441 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:23:53.467 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:23:53.490 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:23:53.491 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:23:53.715 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:23:53.719 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 255.0945ms
+2022-05-04 11:23:53.735 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 19.5100ms
+2022-05-04 11:23:53.924 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:23:54.139 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.7154ms
+2022-05-04 11:24:19.973 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 95
+2022-05-04 11:24:20.010 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:24:20.033 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:24:20.730 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:24:21.353 +04:00 [INF] Executed DbCommand (38ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:24:21.571 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:24:21.606 +04:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CategoryNews] ([CategoriesId], [NewsId])
+VALUES (@p3, @p4);
+2022-05-04 11:24:21.675 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'News_Test_TaronHarutyunyan.NewsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CategoryNews'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4a00f5ca-057f-4c8f-b2eb-5698efb2b168
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CategoryNews'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4a00f5ca-057f-4c8f-b2eb-5698efb2b168
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-05-04 11:25:34.410 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:25:34.432 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:25:34.455 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:25:34.457 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:25:34.740 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:25:34.750 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 319.9184ms
+2022-05-04 11:25:34.763 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 22.1811ms
+2022-05-04 11:25:34.976 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:25:35.093 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.9403ms
+2022-05-04 11:25:43.777 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/Category application/json 17
+2022-05-04 11:25:43.819 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 11:25:43.847 +04:00 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCategory(News_Test_TaronHarutyunyan.ModelsDto.CategoryDto) on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:25:44.514 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:25:54.945 +04:00 [ERR] An error occurred using the connection to database 'News' on server 'WINDOWS-3UFAMTA\SQLEXPRESS'.
+2022-05-04 11:25:54.974 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'News_Test_TaronHarutyunyan.NewsDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "News" requested by the login. The login failed.
+Login failed for user 'WINDOWS-3UFAMTA\user'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+ClientConnectionId:00874b2c-1366-492b-91e3-6647b1081912
+Error Number:4060,State:1,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "News" requested by the login. The login failed.
+Login failed for user 'WINDOWS-3UFAMTA\user'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+ClientConnectionId:00874b2c-1366-492b-91e3-6647b1081912
+Error Number:4060,State:1,Class:11
+2022-05-04 11:27:23.766 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:27:23.787 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:27:23.805 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:27:23.807 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:27:24.117 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:27:24.121 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 333.7962ms
+2022-05-04 11:27:24.137 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 19.9698ms
+2022-05-04 11:27:24.353 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:27:24.488 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.0586ms
+2022-05-04 11:27:32.650 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/Category application/json 17
+2022-05-04 11:27:32.687 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 11:27:32.712 +04:00 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCategory(News_Test_TaronHarutyunyan.ModelsDto.CategoryDto) on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:27:33.390 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:27:33.938 +04:00 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:27:33.986 +04:00 [INF] Category Created
+2022-05-04 11:27:33.992 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:27:33.998 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan) in 1278.328ms
+2022-05-04 11:27:34.000 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 11:27:34.006 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/Category application/json 17 - 200 - - 1355.7445ms
+2022-05-04 11:27:52.534 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/Category - -
+2022-05-04 11:27:52.539 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:27:52.543 +04:00 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:27:52.570 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:27:52.759 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2022-05-04 11:27:52.772 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.Category, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:27:52.785 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan) in 239.6151ms
+2022-05-04 11:27:52.788 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:27:52.790 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/Category - - - 200 - application/json;+charset=utf-8 256.7135ms
+2022-05-04 11:28:03.312 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/Category application/json 13
+2022-05-04 11:28:03.315 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 11:28:03.318 +04:00 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCategory(News_Test_TaronHarutyunyan.ModelsDto.CategoryDto) on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:28:03.335 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:28:03.340 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:28:03.342 +04:00 [INF] Category Created
+2022-05-04 11:28:03.344 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:28:03.347 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan) in 26.119ms
+2022-05-04 11:28:03.349 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.CreateCategory (News_Test_TaronHarutyunyan)'
+2022-05-04 11:28:03.352 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/Category application/json 13 - 200 - - 39.8774ms
+2022-05-04 11:28:07.245 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/Category - -
+2022-05-04 11:28:07.248 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:28:07.250 +04:00 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:28:07.253 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:28:07.257 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2022-05-04 11:28:07.259 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.Category, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:28:07.261 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan) in 8.8461ms
+2022-05-04 11:28:07.263 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:28:07.265 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/Category - - - 200 - application/json;+charset=utf-8 19.8656ms
+2022-05-04 11:28:44.834 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:28:44.853 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:28:44.875 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:28:44.877 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:28:45.202 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:28:45.217 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 364.9100ms
+2022-05-04 11:28:45.228 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 22.4234ms
+2022-05-04 11:28:45.468 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:28:45.589 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.5644ms
+2022-05-04 11:29:02.458 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 61
+2022-05-04 11:29:02.493 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:02.525 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:29:03.212 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:29:03.845 +04:00 [INF] Executed DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:29:03.913 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:29:04.103 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:29:04.198 +04:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CategoryNews] ([CategoriesId], [NewsId])
+VALUES (@p0, @p1);
+2022-05-04 11:29:04.202 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CategoryNews] ([CategoriesId], [NewsId])
+VALUES (@p0, @p1);
+2022-05-04 11:29:04.242 +04:00 [INF] News Created
+2022-05-04 11:29:04.248 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:29:04.255 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 1723.9492ms
+2022-05-04 11:29:04.256 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:04.262 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 61 - 200 - - 1803.9393ms
+2022-05-04 11:29:18.567 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44397/api/News application/json 62
+2022-05-04 11:29:18.571 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:18.574 +04:00 [INF] Route matched with {action = "CreateNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateNews(News_Test_TaronHarutyunyan.ModelsDto.NewsDto) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:29:18.601 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:29:18.605 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2022-05-04 11:29:18.611 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [News] ([Date], [Description], [Title])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [News]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-04 11:29:18.616 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CategoryNews] ([CategoriesId], [NewsId])
+VALUES (@p3, @p4);
+2022-05-04 11:29:18.650 +04:00 [INF] News Created
+2022-05-04 11:29:18.652 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:29:18.654 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan) in 78.0888ms
+2022-05-04 11:29:18.656 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.CreateNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:18.658 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44397/api/News application/json 62 - 200 - - 90.8810ms
+2022-05-04 11:29:27.170 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 11:29:27.173 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:27.176 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:29:27.188 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:29:27.357 +04:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [t].[CategoriesId], [t].[NewsId], [t].[Id], [t].[Name]
+FROM [News] AS [n]
+LEFT JOIN (
+    SELECT [c].[CategoriesId], [c].[NewsId], [c0].[Id], [c0].[Name]
+    FROM [CategoryNews] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoriesId] = [c0].[Id]
+) AS [t] ON [n].[Id] = [t].[NewsId]
+ORDER BY [n].[Id], [t].[CategoriesId], [t].[NewsId], [t].[Id]
+2022-05-04 11:29:27.370 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:29:27.383 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 206.0299ms
+2022-05-04 11:29:27.387 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:29:27.390 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 220.0344ms
+2022-05-04 11:30:35.848 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 11:30:35.868 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2022-05-04 11:30:35.886 +04:00 [INF] Hosting environment: Development
+2022-05-04 11:30:35.889 +04:00 [INF] Content root path: C:\Users\user\source\repos\News_Test_TaronHarutyunyan\News_Test_TaronHarutyunyan
+2022-05-04 11:30:36.152 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-04 11:30:36.169 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 295.7643ms
+2022-05-04 11:30:36.186 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 34.3437ms
+2022-05-04 11:30:36.457 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-04 11:30:36.604 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.3057ms
+2022-05-04 11:30:49.529 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:44397/api/News?id=1 - -
+2022-05-04 11:30:49.564 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:30:49.593 +04:00 [INF] Route matched with {action = "DeleteNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteNews(Int32) on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:30:50.334 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:30:50.929 +04:00 [INF] Executed DbCommand (35ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[Id], [n].[Date], [n].[Description], [n].[Title]
+FROM [News] AS [n]
+WHERE [n].[Id] = @__id_0
+2022-05-04 11:30:51.134 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [News]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-05-04 11:30:51.148 +04:00 [INF] News by 1 Id Deleted
+2022-05-04 11:30:51.154 +04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-04 11:30:51.162 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan) in 1560.6266ms
+2022-05-04 11:30:51.164 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.DeleteNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:30:51.171 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:44397/api/News?id=1 - - - 200 - - 1642.2151ms
+2022-05-04 11:30:57.841 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/News - -
+2022-05-04 11:30:57.845 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:30:57.850 +04:00 [INF] Route matched with {action = "GetAllNews", controller = "News"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNews() on controller News_Test_TaronHarutyunyan.Controllers.NewsController (News_Test_TaronHarutyunyan).
+2022-05-04 11:30:57.880 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:30:57.999 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[Date], [n].[Description], [n].[Title], [t].[CategoriesId], [t].[NewsId], [t].[Id], [t].[Name]
+FROM [News] AS [n]
+LEFT JOIN (
+    SELECT [c].[CategoriesId], [c].[NewsId], [c0].[Id], [c0].[Name]
+    FROM [CategoryNews] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoriesId] = [c0].[Id]
+) AS [t] ON [n].[Id] = [t].[NewsId]
+ORDER BY [n].[Id], [t].[CategoriesId], [t].[NewsId], [t].[Id]
+2022-05-04 11:30:58.042 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.News, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:30:58.061 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan) in 208.347ms
+2022-05-04 11:30:58.064 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.NewsController.GetAllNews (News_Test_TaronHarutyunyan)'
+2022-05-04 11:30:58.066 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/News - - - 200 - application/json;+charset=utf-8 225.5366ms
+2022-05-04 11:31:10.870 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/Category - -
+2022-05-04 11:31:10.873 +04:00 [INF] Executing endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:31:10.877 +04:00 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller News_Test_TaronHarutyunyan.Controllers.CategoryController (News_Test_TaronHarutyunyan).
+2022-05-04 11:31:10.887 +04:00 [INF] Entity Framework Core 5.0.16 initialized 'NewsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-04 11:31:10.895 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2022-05-04 11:31:10.898 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[News_Test_TaronHarutyunyan.Models.Category, News_Test_TaronHarutyunyan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-04 11:31:10.900 +04:00 [INF] Executed action News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan) in 20.0733ms
+2022-05-04 11:31:10.902 +04:00 [INF] Executed endpoint 'News_Test_TaronHarutyunyan.Controllers.CategoryController.GetAllCategories (News_Test_TaronHarutyunyan)'
+2022-05-04 11:31:10.904 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/Category - - - 200 - application/json;+charset=utf-8 34.1603ms
